@@ -22,15 +22,15 @@ func main() {
 		"sha": strings.TrimSpace(string(out)),
 		"values": []map[string]interface{}{
 			{
-				"value": "96 %",
+				"value": "77 %",
 				"line":  "a",
 			},
 			{
-				"value": "90 %",
+				"value": "81 %",
 				"line":  "b",
 			},
 			{
-				"value": "91 %",
+				"value": "53 %",
 				"line":  "c",
 			},
 		},
@@ -50,8 +50,7 @@ func main() {
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", fmt.Sprintf("Token %s", os.Getenv("SERIESCI_TOKEN")))
 
-	client := &http.Client{}
-	res, err := client.Do(req)
+	res, err := http.DefaultClient.Do(req)
 	if err != nil {
 		panic(err)
 	}
