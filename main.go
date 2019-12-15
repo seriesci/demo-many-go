@@ -22,15 +22,15 @@ func main() {
 		"sha": strings.TrimSpace(string(out)),
 		"values": []map[string]interface{}{
 			{
-				"value": "77 %",
+				"value": "82 %",
 				"line":  "a",
 			},
 			{
-				"value": "81 %",
+				"value": "79 %",
 				"line":  "b",
 			},
 			{
-				"value": "53 %",
+				"value": "66 %",
 				"line":  "c",
 			},
 		},
