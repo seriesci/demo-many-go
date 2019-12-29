@@ -22,15 +22,15 @@ func main() {
 		"sha": strings.TrimSpace(string(out)),
 		"values": []map[string]interface{}{
 			{
-				"value": "80 %",
+				"value": "89 %",
 				"line":  "a",
 			},
 			{
-				"value": "81 %",
+				"value": "92 %",
 				"line":  "b",
 			},
 			{
-				"value": "56 %",
+				"value": "74 %",
 				"line":  "c",
 			},
 		},
@@ -41,7 +41,7 @@ func main() {
 		panic(err)
 	}
 
-	uri := "https://seriesci.com/api/repos/seriesci/multiple/demo/multi"
+	uri := "https://seriesci.com/api/seriesci/multiple/demo/many"
 	req, err := http.NewRequest(http.MethodPost, uri, &b)
 	if err != nil {
 		panic(err)
